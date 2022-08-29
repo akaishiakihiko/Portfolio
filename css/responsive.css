@@ -106,15 +106,16 @@
   .product .product-text p {
     line-height: 1.6;
   }
-  .product .product-reverse {
-    width: 100vh;
-    height: auto;
-    margin-bottom: 50px;
-  }
   .product .product-reverse .product-text {
     text-align: left;
     margin: 0 auto;
     margin-bottom: 200px;
+  }
+  .product .product-reverse .product-img img {
+    background-color: red;
+    width: 100vh;
+    height: auto;
+    margin-bottom: 50px;
   }
   .product .slider .slick-slide {
     margin: 0 10px;

@@ -65,13 +65,13 @@ $('.slider2').slick({
     {
       breakpoint: 800,//モニターの横幅が769px以下の見せ方
       settings: {
-        slidesToShow: 2,//スライドを画面に2枚見せる
+        slidesToShow: 1,//スライドを画面に2枚見せる
       }
     },
     {
       breakpoint: 500,//モニターの横幅が426px以下の見せ方
       settings: {
-        slidesToShow: 1.5,//スライドを画面に1.5枚見せる
+        slidesToShow: 1,//スライドを画面に1.5枚見せる
       }
     }
   ]

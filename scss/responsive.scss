@@ -149,9 +149,14 @@
         margin-bottom: 200px;
       }
 
-      width: 100vh;
-      height: auto;
-      margin-bottom: 50px;
+      .product-img {
+        img {
+          background-color: red;
+          width: 100vh;
+          height: auto;
+          margin-bottom: 50px;
+        }
+      }
     }
 
 
