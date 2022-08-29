@@ -6,7 +6,6 @@ body {
   background-color: #ffffff;
   font-weight: 500;
   background-image: url(../images/background.png);
-  overflow-x: hidden;
 }
 
 a:hover {
