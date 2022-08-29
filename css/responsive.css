@@ -1,0 +1,152 @@
+@charset "UTF-8";
+@media screen and (max-width: 480px) {
+  header {
+    height: 100%;
+    height: auto;
+  }
+  header .header-flex {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  header .header-text {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+  }
+  header .header-logo {
+    width: 120px;
+    padding: 30px 0 0 30px;
+    margin-bottom: 300px;
+  }
+  header .header-nav {
+    margin-bottom: 60px;
+  }
+  header .header-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 400px;
+    margin: 0 auto;
+  }
+  header .header-nav li {
+    width: 80px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  header .header-title {
+    padding-left: 50px;
+  }
+  header .header-title h1 {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  header .header-mainvisual img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+  .profile {
+    margin-top: 350px;
+    margin-bottom: 100px;
+  }
+  .profile .profile-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile .profile-img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 60px;
+  }
+  .profile .profile-text {
+    margin: 0 auto;
+    padding: 10px;
+    letter-spacing: 3px;
+  }
+  .profile .profile-text h2 {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  .profile .profile-text h3 {
+    width: 100px;
+    margin-bottom: 30px;
+  }
+  .profile .profile-text p {
+    width: 100%;
+    line-height: 1.8;
+  }
+  .product .product-row,
+.product .product-reverse {
+    margin-bottom: 120px;
+  }
+  .product .product-img img {
+    width: 500px;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+  .product .product-text {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 50px 20px;
+    background-color: #F7F7F8;
+    border-top-right-radius: 100px;
+    margin: 0 auto;
+  }
+  .product .product-text small {
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .product .product-text h2 {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  .product .product-text p {
+    line-height: 1.6;
+  }
+  .product .product-reverse .product-text {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 200px;
+  }
+  .product .slider .slick-slide {
+    margin: 0 10px;
+    /*スライド左右の余白調整*/
+  }
+  .product .slider2 .slick-slide {
+    margin: 0 10px;
+    /*スライド左右の余白調整*/
+  }
+  .about {
+    height: 100%;
+    margin-bottom: 100px;
+  }
+  footer {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+  }
+  footer .footer-nav ul {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0 80px 0;
+    padding-top: 100px;
+  }
+  footer .footer-pagetop a {
+    margin-left: 200px;
+    margin-bottom: 0px;
+  }
+  footer .footer-title img {
+    width: 100px;
+    margin-bottom: 30px;
+  }
+  footer .footer-title p {
+    width: 100%;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+}/*# sourceMappingURL=responsive.css.map */

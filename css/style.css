@@ -1,0 +1,327 @@
+@charset "UTF-8";
+body {
+  font-family: "Lusitana", "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+  font-size: 16px;
+  color: #707070;
+  background-color: #ffffff;
+  font-weight: 500;
+  background-image: url(../images/background.png);
+}
+
+a:hover {
+  color: #F03433;
+}
+
+/*=================================
+オープニング
+===================================*/
+/* Loading背景画面設定　*/
+#splash {
+  /*fixedで全面に固定*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: #F7F7F8;
+  text-align: center;
+  color: #fff;
+  /* Loading画像中央配置　*/
+  /* Loading アイコンの大きさ設定　*/
+  /* fadeUpをするアイコンの動き */
+}
+#splash #splash_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#splash #splash_logo img {
+  width: 400px;
+}
+#splash .fadeUp {
+  -webkit-animation-name: fadeUpAnime;
+          animation-name: fadeUpAnime;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+@-webkit-keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*=================================
+ループスライダーのためのcss
+===================================*/
+.slider img {
+  width: 100%;
+  /*スライダー内の画像を横幅100%に*/
+  height: auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+.slider .slick-slide {
+  margin: 0 30px;
+  /*スライド左右の余白調整*/
+}
+
+.slider2 .slick-slide {
+  margin: 0 30px;
+  /*スライド左右の余白調整*/
+}
+
+.fadeUpTrigger {
+  opacity: 0;
+}
+
+.fadeUp {
+  -webkit-animation-name: fadeUpAnime;
+          animation-name: fadeUpAnime;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ふわっとその場で */
+.fadeIn {
+  -webkit-animation-name: fadeInAnime;
+          animation-name: fadeInAnime;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+header {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 100px;
+}
+header .header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+header .header-text {
+  margin: 50px 0 0 100px;
+}
+header .header-logo {
+  width: 100px;
+  margin-bottom: 50px;
+}
+header .header-nav {
+  margin-bottom: 80px;
+}
+header .header-nav li {
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+header .header-title h1 {
+  width: 400px;
+  margin-bottom: 20px;
+}
+header .header-title p {
+  line-height: 2.2;
+  letter-spacing: 2px;
+}
+header .header-mainvisual img {
+  width: 1100px;
+  height: 100vh;
+  border-bottom-left-radius: 100px;
+}
+
+.profile {
+  margin-bottom: 300px;
+}
+.profile .profile-title h2 {
+  width: 130px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.profile .profile-title p {
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.profile .profile-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.profile .profile-img {
+  width: 700px;
+  height: 500px;
+}
+.profile .profile-img img {
+  border-top-right-radius: 100px;
+}
+.profile .profile-text {
+  margin: 150px 0 0 80px;
+  letter-spacing: 3px;
+}
+.profile .profile-text h2 {
+  width: 370px;
+  margin-bottom: 30px;
+}
+.profile .profile-text h3 {
+  width: 160px;
+  margin-bottom: 50px;
+}
+.profile .profile-text p {
+  width: 500px;
+  font-size: 14px;
+  line-height: 2.5;
+  letter-spacing: 2px;
+}
+
+.product .product-title h2 {
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.product .product-title p {
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.product .product-row {
+  margin-bottom: 400px;
+}
+.product .product-reverse {
+  margin-bottom: 400px;
+}
+.product .product-img img {
+  border-top-left-radius: 100px;
+}
+.product .product-text {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  padding: 60px 60px;
+  background-image: url(../images/background2.png);
+  border-top-right-radius: 100px;
+  margin: -50px 0 0 100px;
+}
+.product .product-text small {
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  display: block;
+}
+.product .product-text h2 {
+  width: 330px;
+  margin-bottom: 30px;
+}
+.product .product-text p {
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.product .product-reverse .product-img img {
+  border-top-right-radius: 100px;
+  border-top-left-radius: 0px;
+}
+.product .product-reverse .product-text {
+  border-top-left-radius: 100px;
+  border-top-right-radius: 0px;
+  margin: -50px 0 0 800px;
+}
+
+.about {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto 300px auto;
+  text-align: center;
+}
+
+footer {
+  width: 1200px;
+  height: 700px;
+  border-top-right-radius: 100px;
+  background-color: #F7F7F8;
+  padding: 60px 0 0 200px;
+}
+footer .footer-nav ul {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 400px;
+  margin-bottom: 60px;
+}
+footer .footer-pagetop a {
+  display: block;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border: 1px solid #707070;
+  margin-left: 600px;
+}
+footer .footer-pagetop a:hover {
+  background-color: #707070;
+  color: #fff;
+}
+footer .footer-title img {
+  width: 100px;
+  margin-bottom: 30px;
+}
+footer .footer-title p {
+  width: 500px;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+footer .footer-title span {
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */

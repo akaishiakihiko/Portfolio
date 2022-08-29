@@ -1,0 +1,385 @@
+@import '_settings';
+
+//-------------------------------
+// 全体構造
+// ------------------------------
+body {
+  font-family: 'Lusitana', '游明朝', 'Yu Mincho', YuMincho, 'Hiragino Mincho Pro', serif;
+  font-size: $font-size-normal;
+  color: $color;
+  background-color: $bace-color;
+  font-weight: 500;
+  background-image: url(../images/background.png);
+}
+
+a:hover {
+  color: $accent-color;
+}
+
+
+
+/*=================================
+オープニング
+===================================*/
+
+/* Loading背景画面設定　*/
+#splash {
+  /*fixedで全面に固定*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: $main-color;
+  text-align: center;
+  color: #fff;
+
+
+  /* Loading画像中央配置　*/
+  #splash_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Loading アイコンの大きさ設定　*/
+  #splash_logo img {
+    width: 400px;
+  }
+
+  /* fadeUpをするアイコンの動き */
+  .fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 1.0s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeUpAnime {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/*=================================
+ループスライダーのためのcss
+===================================*/
+.slider img {
+  width: 100%;
+  /*スライダー内の画像を横幅100%に*/
+  height: auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+.slider .slick-slide {
+  margin: 0 30px;
+  /*スライド左右の余白調整*/
+}
+
+.slider2 .slick-slide {
+  margin: 0 30px;
+  /*スライド左右の余白調整*/
+}
+
+
+//ふわっと下から//
+.fadeUpTrigger {
+  opacity: 0;
+}
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* ふわっとその場で */
+.fadeIn {
+  animation-name: fadeInAnime;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+//-------------------------------
+// ヘッダー
+// ------------------------------
+
+header {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 100px;
+
+  .header-flex {
+    @include row ();
+  }
+
+  .header-text {
+    margin: 50px 0 0 100px;
+  }
+
+  .header-logo {
+    width: 100px;
+    margin-bottom: 50px;
+  }
+
+  .header-nav {
+    margin-bottom: 80px;
+
+    li {
+      margin-bottom: 50px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .header-title {
+    h1 {
+      width: 400px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 2.2;
+      letter-spacing: 2px;
+    }
+  }
+
+  .header-mainvisual {
+    img {
+      width: 1100px;
+      height: 100vh;
+      border-bottom-left-radius: 100px;
+    }
+  }
+}
+
+// ------------------------------
+// メイン
+// ------------------------------
+
+.profile {
+  margin-bottom: 300px;
+
+  .profile-title {
+    h2 {
+      width: 130px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    p {
+      letter-spacing: 3px;
+      text-align: center;
+      margin-bottom: 80px;
+    }
+  }
+
+  .profile-flex {
+    @include row ();
+    justify-content: flex-start;
+  }
+
+  .profile-img {
+    width: 700px;
+    height: 500px;
+
+    img {
+      border-top-right-radius: 100px;
+    }
+  }
+
+  .profile-text {
+    margin: 150px 0 0 80px;
+    letter-spacing: 3px;
+
+    h2 {
+      width: 370px;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      width: 160px;
+      margin-bottom: 50px;
+    }
+
+    p {
+      @include p ();
+    }
+  }
+}
+
+
+.product {
+  .product-title {
+    h2 {
+      width: 150px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    p {
+      letter-spacing: 3px;
+      text-align: center;
+      margin-bottom: 80px;
+    }
+  }
+
+  .product-row {
+    margin-bottom: 400px;
+  }
+
+  .product-reverse {
+    margin-bottom: 400px;
+  }
+
+  .product-img {
+    img {
+      border-top-left-radius: 100px;
+    }
+  }
+
+  .product-text {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    padding: 60px 60px;
+    background-image: url(../images/background2.png);
+    border-top-right-radius: 100px;
+    margin: -50px 0 0 100px;
+
+    small {
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+      display: block;
+    }
+
+    h2 {
+      width: 330px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 2.0;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .product-reverse {
+    .product-img {
+      img {
+        border-top-right-radius: 100px;
+        border-top-left-radius: 0px;
+      }
+    }
+
+    .product-text {
+      border-top-left-radius: 100px;
+      border-top-right-radius: 0px;
+      margin: -50px 0 0 800px;
+    }
+  }
+
+}
+
+.about {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto 300px auto;
+  text-align: center;
+}
+
+//-------------------------------
+// フッター
+// ------------------------------
+
+footer {
+  width: 1200px;
+  height: 700px;
+  border-top-right-radius: 100px;
+  background-color: $main-color;
+  padding: 60px 0 0 200px;
+
+  .footer-nav {
+    ul {
+      width: 400px;
+      @include row ();
+      margin-left: 400px;
+      margin-bottom: 60px;
+    }
+  }
+
+  .footer-pagetop {
+    a {
+      display: block;
+      width: 200px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      border: 1px solid $color;
+      margin-left: 600px;
+    }
+
+    a:hover {
+      background-color: $color;
+      color: #fff;
+    }
+  }
+
+
+  .footer-title {
+    img {
+      width: 100px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      width: 500px;
+      font-size: 14px;
+      line-height: 2.0;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    span {
+      font-size: 14px;
+    }
+  }
+}
