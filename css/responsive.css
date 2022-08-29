@@ -81,8 +81,8 @@
     margin-bottom: 120px;
   }
   .product .product-img img {
-    width: 500px;
-    height: 100%;
+    width: 100vh;
+    height: auto;
     margin-bottom: 50px;
   }
   .product .product-text {
@@ -106,6 +106,11 @@
   .product .product-text p {
     line-height: 1.6;
   }
+  .product .product-reverse {
+    width: 100vh;
+    height: auto;
+    margin-bottom: 50px;
+  }
   .product .product-reverse .product-text {
     text-align: left;
     margin: 0 auto;
@@ -119,9 +124,11 @@
     margin: 0 10px;
     /*スライド左右の余白調整*/
   }
-  .about {
-    height: 100%;
-    margin-bottom: 100px;
+  .about img {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: -100px;
   }
   footer {
     width: 100%;

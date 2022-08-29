@@ -109,11 +109,10 @@
       margin-bottom: 120px;
     }
 
-
     .product-img {
       img {
-        width: 500px;
-        height: 100%;
+        width: 100vh;
+        height: auto;
         margin-bottom: 50px;
       }
     }
@@ -149,6 +148,10 @@
         margin: 0 auto;
         margin-bottom: 200px;
       }
+
+      width: 100vh;
+      height: auto;
+      margin-bottom: 50px;
     }
 
 
@@ -164,8 +167,11 @@
   }
 
   .about {
-    height: 100%;
-    margin-bottom: 100px;
+    img {
+      height: 300px;
+      object-fit: cover;
+      margin-bottom: -100px;
+    }
   }
 
   //-------------------------------
@@ -194,7 +200,6 @@
     }
 
     .footer-title {
-
       img {
         width: 100px;
         margin-bottom: 30px;
